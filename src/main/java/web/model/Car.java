@@ -5,6 +5,15 @@ public class Car {
     private int series;
     private String color;
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", series=" + series +
+                ", color='" + color + '\'' +
+                '}';
+    }
+
     public Car(String model, int series, String color) {
         this.model = model;
         this.series = series;
